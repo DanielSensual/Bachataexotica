@@ -41,7 +41,7 @@ export default function Home() {
       >
         <h2 className="section-heading">About the Movement</h2>
         <p className="text-lg md:text-xl text-white/80">
-          <span className="gold-text">Luxury meets rhythm.</span> Founded by
+          <span className="gold-text">elegance meets rhythm.</span> Founded by
           Daniel Castillo, Bachata&nbsp;Exotica fuses elite technique with
           high-impact visuals, creating a dance experience as refined as it is
           powerful.
@@ -58,19 +58,19 @@ export default function Home() {
           {[
             {
               title: 'Weekly Classes',
-              desc: 'Elite training every Wed & Fri in Orlando.',
+              desc: 'Elite training every Tuesday at 7PM in Tampa, FL.',
               cta: 'Reserve Spot',
-              link: 'mailto:info@bachataexotica.com',
+              link: 'mailto:Bachataexoticadance@gmail.com',
             },
             {
-              title: 'VIP Workshops',
-              desc: 'Intimate intensives designed for rapid mastery.',
+              title: '6 Week Bachata Program',
+              desc: 'Beginner Level Program for new dancers.',
               cta: 'Request Invite',
               link: '#contact',
             },
             {
-              title: 'Festival Performances',
-              desc: 'Cinematic shows & exclusive choreos worldwide.',
+              title: '6 Week Intermediate Program',
+              desc: ' Level up your bachata sensual with 6 weeks of Intermediate instructions.',
               cta: 'See Schedule',
               link: '#contact',
             },
@@ -95,6 +95,44 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* ─── BLOG SECTION ───────────────────────────────────── */}
+<section
+  id="blog"
+  className="py-24 px-4 max-w-4xl mx-auto text-center"
+>
+  <h2 className="section-heading">Blog & Insights</h2>
+  <div className="space-y-8 mt-10">
+    {/* EXAMPLE BLOG POSTS — REPLACE WITH MAP LATER */}
+    <div className="bg-[#1a1a1a]/80 rounded-xl p-6">
+      <h3 className="text-xl font-bold gold-gradient-text mb-2">
+        How to Start Bachata: Top 5 Mindset Shifts
+      </h3>
+      <p className="text-white/70">
+        Breaking down the mental game for new dancers — and why confidence is everything.
+      </p>
+      <a
+        href="#"
+        className="inline-block mt-3 text-gold-deep underline hover:text-gold"
+      >
+        Read More
+      </a>
+    </div>
+    <div className="bg-[#1a1a1a]/80 rounded-xl p-6">
+      <h3 className="text-xl font-bold gold-gradient-text mb-2">
+        Behind the Scenes: Building Bachata Exotica
+      </h3>
+      <p className="text-white/70">
+        The origin story, failures, pivots, and lessons from Miami to Dubai.
+      </p>
+      <a
+        href="#"
+        className="inline-block mt-3 text-gold-deep underline hover:text-gold"
+      >
+        Read More
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* ─── GALLERY ─────────────────────────────────────── */}
       <Gallery />
