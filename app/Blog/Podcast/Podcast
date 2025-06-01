@@ -1,0 +1,19 @@
+// /app/blog/page.tsx
+export default function BlogPage() {
+  return (
+    <section className="py-24 px-4 max-w-4xl mx-auto">
+      <h1 className="section-heading mb-8">Blog & Announcements</h1>
+      <div className="space-y-10">
+        {/* Replace below with mapped posts or real blog data */}
+        <article className="bg-[#181818] rounded-xl p-6">
+          <h2 className="text-2xl font-bold gold-gradient-text mb-2">
+            Bachata Exotica Launches!
+          </h2>
+          <p className="text-white/80">We just went live. Here's how we built the movement and what's coming next…</p>
+          <span className="text-xs text-white/40">May 30, 2025</span>
+        </article>
+        {/* More posts here */}
+      </div>
+    </section>
+  );
+}
