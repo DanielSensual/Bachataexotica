@@ -2,15 +2,14 @@ export default function HomePage() {
   return (
     <section className="text-center py-12">
       {/* Luxury Banner */}
-      <div className="w-full max-w-4xl mx-auto mb-12 rounded-3xl overflow-hidden shadow-2xl border-4 border-[var(--gold)]">
+      <div className="relative w-full max-w-4xl mx-auto mb-12 rounded-3xl overflow-hidden shadow-2xl border-4 border-gold">
         <img
           src="/Banner1.jpg"
           alt="Bachata Exotica Banner"
-          className="w-full h-[300px] object-cover object-center"
-          style={{
-            background: 'linear-gradient(90deg, #0B0B0B 0%, #D4AF37 100%)'
-          }}
+          className="w-full h-[300px] object-cover object-center opacity-90"
         />
+        {/* Gold-Black Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/10 to-gold/40 pointer-events-none" />
       </div>
 
       {/* Headline & Description */}
