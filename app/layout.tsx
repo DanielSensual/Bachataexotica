@@ -1,4 +1,3 @@
-
 import './globals.css';
 import type { Metadata } from 'next';
 import { Playfair_Display, Montserrat } from 'next/font/google';
