@@ -24,5 +24,4 @@ export default function HomePage() {
       {/* Video or additional content can go here */}
     </section>
   );
-}<section className="max-w-2xl mx-auto py-10 px-4">
-  <h2 className="font-heading text-3xl text-gold mb-6">Performance Videos</h2>
+}
