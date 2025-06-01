@@ -15,8 +15,8 @@ export default function HomePage() {
           priority
           className="h-[340px] w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-night/70 via-night/30 to-gold/10" />
-      </div>
+  <div className="absolute inset-0 bg-gradient-to-r from-night/70 via-night/30 to-gold/10" />
+</div>
 
       {/* ── Headline & CTA ─────────────────────────────────────────── */}
       <h1 className="font-heading text-5xl text-gold drop-shadow-md">
