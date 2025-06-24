@@ -1,4 +1,4 @@
-// /app/calendar/page.tsx
+// Path: app/Calendar/Calendar – renders the /calendar route
 export default function CalendarPage() {
   return (
     <section className="py-24 px-4 max-w-3xl mx-auto">
