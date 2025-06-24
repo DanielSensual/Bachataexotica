@@ -1,4 +1,4 @@
-// /app/blog/page.tsx
+// Path: app/Blog/Podcast/Podcast – renders the /blog/podcast route
 export default function BlogPage() {
   return (
     <section className="py-24 px-4 max-w-4xl mx-auto">
