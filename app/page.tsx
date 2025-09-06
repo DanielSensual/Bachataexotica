@@ -53,7 +53,7 @@ export default function HomePage() {
       {/* ── HERO ───────────────────────────────────────────── */}
       <div className="relative mb-12 overflow-hidden rounded-3xl border-2 border-gold shadow-lg">
         <Image
-          src="/banner1.webp"
+          src="/Banner1.webp"
           alt="Bachata Exotica dancers in gold light"
           width={1600}
           height={900}
