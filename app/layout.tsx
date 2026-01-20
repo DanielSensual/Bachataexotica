@@ -1,40 +1,45 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Montserrat, Playfair_Display } from 'next/font/google';
+import type { Metadata } from 'next'
+import { Playfair_Display, Lato } from 'next/font/google'
+import './globals.css'
+import Navbar from '@/components/Navbar'
 
-// Google Fonts
-const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-body' });
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-heading' });
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
 
-// SEO Metadata
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['300', '400', '700'],
+  variable: '--font-lato',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Bachata Exotica',
-  description: 'Luxury Bachata movement • Classes • Events • Workshops',
-  icons: [{ rel: 'icon', url: '/favicon.ico' }],
+  title: 'Bachata Exotica | The Evolution of Bachata',
+  description: 'Experience the elegance of connection. Exclusive events and masterclasses for the refined dancer.',
+  keywords: ['bachata', 'dance', 'events', 'masterclass', 'luxury dance', 'bachata exotica'],
   openGraph: {
-    title: 'Bachata Exotica',
-    description: 'Luxury Bachata movement • Classes • Events • Workshops',
-    images: ['/og.jpg'],
+    title: 'Bachata Exotica | The Evolution of Bachata',
+    description: 'Experience the elegance of connection. Exclusive events and masterclasses arriving soon.',
+    type: 'website',
   },
-  twitter: { card: 'summary_large_image' },
-};
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${playfair.variable}`}>
-      <body className="min-h-screen bg-night text-white font-body">
-        <nav className="sticky top-0 z-50 flex w-full justify-center gap-8 bg-slate/70 backdrop-blur py-5 text-lg">
-          {['Home', 'About', 'Gallery', 'Calendar', 'Blog', 'Podcast'].map((x) => (
-            <a key={x} href={`/${x.toLowerCase()}`} className="nav-link uppercase">
-              {x}
-            </a>
-          ))}
-        </nav>
-        {children}
-        <footer className="py-8 text-center text-sm text-white/60">
-          © {new Date().getFullYear()} Bachata Exotica. All rights reserved.
-        </footer>
+    <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
+      <body className="font-sans antialiased">
+        <Navbar />
+        <main>
+          {children}
+        </main>
       </body>
     </html>
-  );
+  )
 }
